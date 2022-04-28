@@ -65,3 +65,27 @@ body {
   width: 150px;
   border-radius: 8px;
 }
+
+.rotate {
+  animation: clockWise infinite 20s linear;
+}
+.rotate__anti {
+  animation: antiClockWise infinite 10s linear;
+}
+@keyframes clockWise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes antiClockwise {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
