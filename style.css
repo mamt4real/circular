@@ -1,0 +1,57 @@
+body {
+  display: grid;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.circle {
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.parent {
+  display: grid;
+  position: relative;
+  place-items: center;
+  width: 60%;
+  height: 60%;
+}
+
+.child {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.child__image {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.relative {
+  position: relative;
+}
+
+#main {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 2rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.actions > form {
+  display: flex;
+  max-width: 300px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.last {
+  width: 50%;
+  height: 50%;
+}

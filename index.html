@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Circular Containners</title>
+  </head>
+  <body>
+    <div class="main circle parent" id="main">
+      <div class="circle parent" id="inner">
+        <div class="circle parent" id="inner2">
+          <div class="circle parent last">
+            <img src="img/default.jpg" alt="" class="child__image" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <form id="form">
+        <input
+          name="no"
+          max="20"
+          min="1"
+          type="number"
+          placeholder="No of Circles"
+        />
+        <button type="submit">Place</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
